@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+
+img{
+	
+	margin: 0 0 4px 0;
+	width: 100%;
+}
+
+
+body{
+	background-color:#f8f8f8;
+}
+
+
+.shipin{
+	margin:50px 0;
+}
+
+
+.shipin h5{
+	font-size: 20px;
+	color: #666;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 100px;
+}
