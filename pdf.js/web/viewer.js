@@ -1005,6 +1005,19 @@ var PDFViewerApplication = {
                 _this2.passwordPrompt.open();
               };
 
+			   PDFJS.getDocument({url:url,rangeChunkSize:65536*16}).then(function(pdfDoc_) {
+        pdfDoc = pdfDoc_;
+        document.getElementById('page_count').textContent = pdfDoc.numPages;
+
+        // Initial/first page rendering
+        renderPage(pageNum);
+
+   }) 
+
+   
+			  
+			  
+			  
               loadingTask.onProgress = function (_ref) {
                 var loaded = _ref.loaded,
                     total = _ref.total;
